@@ -66,19 +66,18 @@
         font-size: 18px;
         line-height: 24px;
         font-weight: 400;
-        background: #292929;
-        background: radial-gradient(circle, #292929 28%, #1b1b1b 100%);
+        background: #262535;
         font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #FFFFFF; }
+        color: #EEE; }
     }
     @media (prefers-color-scheme: light) {
       body {
         font-size: 18px;
         line-height: 24px;
         font-weight: 400;
-        background: #F1F1F1;
+        background: #EEE;
         font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #222; }
+        color: #262535; }
     }
 
 /* Use this for a fixed background color instead of dark and light mode
@@ -90,6 +89,37 @@
         sans-serif;
     }
 */
+
+  /* Flag in Background
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  body {
+    background-image: url(./extra/custom-assets/tansPrideFlagSkewed.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    transition: background-position 0.5s ease-in-out;
+  }
+
+  @media screen and (max-width:500px) {
+    body {
+      background-image: url(./extra/custom-assets/tansPrideFlag.svg);
+      background-position-x: 5%;
+    }
+  }
+  @media screen and (max-width:550px) and (min-width:500px) {
+    body {
+      background-position-x: 300%;
+    }
+  }
+  @media screen and (max-width:600px) and (min-width:550px) {
+    body {
+      background-position-x: 200%;
+    }
+  }
+  @media screen and (max-width: 800px) and (min-width:600px){
+    body {
+      background-position-x: 150%;
+    }
+  }
   
   /* Typography
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
