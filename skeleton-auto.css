@@ -142,11 +142,30 @@
   /* Links
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   a {
-    color: #0085FF; 
+    color: #FFFFFF; 
     text-decoration: none;
   }
   a:hover {
-    color: #0085FF; }
+    color: #FFFFFF;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    a {
+      color: #FFFFFF;
+    }
+    a:hover {
+      color: #FFFFFF;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    a {
+      color: #262535;
+    }
+    a:hover {
+      color: #262535;
+    }
+  }
   
   .spacing {
     padding: 0 10px;
@@ -265,6 +284,27 @@
   
   }
   
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.footer {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: .25rem;
+}
+
+.footer>a {
+  text-shadow: 2px 2px 4px #31363b;
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: light) {
+  .footer>a {
+    text-shadow: none;
+  }
+}
+
 /* Credit footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Styling for credit footer text */

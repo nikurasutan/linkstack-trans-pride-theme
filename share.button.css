@@ -54,7 +54,7 @@
     border-radius: 8px;
     cursor: pointer;
     color: #000000;
-    background-color: #5BCEFA;
+    background-color: #EEE;
    }
 @media screen and (min-width: 600px) {
   .sharebutton,
@@ -75,6 +75,13 @@
     color: #000000; 
     background-color: #EEE;
    }
+}
+
+@media (prefers-color-scheme: light) {
+  .sharebutton {
+    background-color: none;
+    border: #000000 solid 2px;
+  }
 }
 sharebutton:hover,
 .sharebutton:hover {
